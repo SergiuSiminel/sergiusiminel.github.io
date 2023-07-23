@@ -1,0 +1,24 @@
+{
+  "name": "koopmanschilderwerken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node live-reload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karmibrahim/koopmanschilderwerken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karmibrahim/koopmanschilderwerken/issues"
+  },
+  "homepage": "https://github.com/karmibrahim/koopmanschilderwerken#readme",
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "livereload": "^0.9.3",
+    "serve-static": "^1.15.0"
+  }
+}

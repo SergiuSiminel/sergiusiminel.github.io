@@ -1,0 +1,478 @@
+/*============================
+03. Common Style CSS
+==============================*/
+
+/*------------------
+3.1 - Buttons Style
+--------------------*/
+.btn-group {
+  .btn {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn {
+  border-radius: 0;
+  color: $brandColor;
+  display: inline-block;
+  padding: 18px 45px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s ease-in;
+  outline: none;
+  letter-spacing: 1.75px;
+  position: relative;
+
+  @media #{$sm-device} {
+    padding: 15px 25px;
+  }
+
+  &:focus, &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &-bordered {
+    border-color: $borderColor;
+    color: $headingColor;
+
+    &:hover {
+      border-color: $brandColor;
+      color: $brandColor;
+    }
+  }
+
+  &-black {
+    background-color: lighten($black, 19%);
+    color: $white;
+
+    &:hover {
+      background-color: $brandColor;
+    }
+  }
+
+  &-brand {
+    background-color: $brandColor;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($black, 19%);
+      color: $white;
+    }
+  }
+
+  &-hvr-brand {
+    border-color: $brandColor;
+    color: $brandColor;
+
+    &:hover {
+      background-color: $brandColor;
+      border-color: $brandColor;
+      color: $white;
+    }
+  }
+}
+
+/*----------------------
+3.2 - Background Image
+-----------------------*/
+.bg-img {
+  background: no-repeat center center;
+  background-size: cover;
+
+  &-tr {
+    background: no-repeat top right;
+  }
+
+  &-tl {
+    background: no-repeat top left;
+  }
+
+  &-br {
+    background: no-repeat bottom right;
+  }
+
+  &-bl {
+    background: no-repeat bottom left;
+  }
+
+  &-nr {
+    background: no-repeat center center;
+    background-size: contain;
+  }
+}
+
+/*-----------------
+3.3 - Overflow
+-------------------*/
+.fix {
+  overflow: hidden;
+
+  &-x {
+    overflow-x: hidden;
+  }
+
+  &-y {
+    overflow-y: hidden;
+  }
+}
+
+/*-------------------------
+3.4 - Section title Style
+--------------------------*/
+.section-title {
+  margin-bottom: 80px;
+
+  @media #{$md-device} {
+    margin-bottom: 51px;
+  }
+
+  @media #{$sm-device} {
+    margin-bottom: 35px;
+  }
+
+  h6 {
+    color: $paragraph;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+    @media #{$sm-device} {
+      margin-bottom: 18px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-family: $font-pd;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+
+  &--2{
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: -7px;
+      margin-bottom: 25px;
+    }
+
+    h6 {
+      font-size: 14px;
+      font-family: $font-pd;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--3{
+    h2{
+      font-size: 40px;
+      margin-bottom: 35px;
+      padding-bottom: 10px;
+      position: relative;
+
+      @media #{$sm-device} {
+        margin-bottom: 25px;
+        font-size: 30px;
+      }
+
+      &:before,&:after{
+        border-bottom: 1px solid #ddd;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 1px;
+        width: 24px;
+      }
+
+      &:after{
+        bottom: 3px;
+      }
+    }
+
+    &.left-align{
+      h2{
+        &:before,&:after{
+          left: 0;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  &.white{
+    color: $white;
+    h2,h6{
+      color: $white;
+    }
+  }
+}
+
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  &-fluid {
+    padding: 0 15px;
+
+    @media screen and (min-width: 1201px) {
+      padding: 0 100px;
+    }
+
+    @media #{$md-device} {
+      max-width: 720px;
+      margin: auto;
+    }
+  }
+}
+
+
+/*--------------------------------
+3.9 - Tippy Customization
+----------------------------------*/
+.tippy-popper {
+  .tippy-tooltip {
+    background-color: $secondaryColor;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 7px 13px;
+  }
+
+  &[x-placement^='top'] {
+    .tippy-arrow {
+      border-top-color: $secondaryColor !important;
+    }
+  }
+
+  &[x-placement^='bottom'] {
+    .tippy-arrow {
+      border-bottom-color: $secondaryColor !important;
+    }
+  }
+
+  &[x-placement^='left'] {
+    .tippy-arrow {
+      border-left-color: $secondaryColor !important;
+    }
+  }
+
+  &[x-placement^='right'] {
+    .tippy-arrow {
+      border-right-color: $secondaryColor !important;
+    }
+  }
+}
+
+/*--------------------------------
+3.10 - Magnific JS Customization
+----------------------------------*/
+.ht-mfp {
+  transition: 0.4s;
+
+  &.mfp-bg {
+    background: rgba(black, 0.4);
+    transition: 0.4s;
+  }
+
+  .mfp-content {
+    transition: 0.3s;
+
+    @media #{$xl-device} {
+      max-width: 70%;
+    }
+
+
+    .mfp-close {
+      display: none;
+    }
+  }
+
+  .mfp-close {
+    background-color: $brandColor;
+    color: $white;
+    padding: 0;
+    text-align: center;
+    opacity: 1;
+    top: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+
+    @media #{$sm-device} {
+      top: 30px;
+      right: 30px;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+    }
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
+  }
+
+  .mfp-arrow {
+    background-color: $brandColor;
+    opacity: 1;
+    margin-left: 15px;
+    height: 55px;
+    width: 55px;
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      content: '\f104';
+      color: $white;
+      font-family: $fa-icon;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-right {
+      margin-left: auto;
+      margin-right: 15px;
+
+      &:after {
+        content: '\f105';
+      }
+    }
+
+    &:hover {
+      background-color: darken($secondaryColor, 10%);
+    }
+  }
+
+  &.zoom-animate {
+    &.mfp-bg {
+      opacity: 0;
+    }
+
+    .mfp-content {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+
+    // Animate In
+    &.mfp-ready {
+      &.mfp-bg {
+        opacity: 0.9;
+      }
+
+      .mfp-content {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    // Animate Out
+    &.mfp-removing {
+      .mfp-content {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+
+      &.mfp-bg {
+        opacity: 0;
+      }
+
+      .mfp-close {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/*--------------------------------
+3.11 - Blockquote Style
+----------------------------------*/
+blockquote, .blockquote {
+  background-color: $blackSoft;
+  color: $white;
+  font-size: 26px;
+  line-height: 1.4;
+  padding: 42px 44px 80px;
+  position: relative;
+
+  @media #{$sm-device} {
+    padding: 20px 22px 60px;
+  }
+
+  &:before {
+    content: '\f10e';
+    font-family: $fa-icon;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    @media #{$sm-device} {
+      right: 30px;
+      bottom: 20px;
+    }
+  }
+
+  &-title {
+    color: $brandColor;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+  }
+}
+
+/*--------------------------------
+3.12 - Nice Select Customization
+----------------------------------*/
+.nice-select {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid $brandColor;
+  color: $headingColor;
+  float: inherit;
+  font-size: 24px;
+  padding-left: 0;
+
+  &:hover, &:focus {
+    border-bottom-color: $brandColor;
+  }
+
+  &:after {
+    border-right-color: $paragraph;
+    border-bottom-color: $paragraph;
+    height: 7px;
+    width: 7px;
+  }
+
+  .list {
+    border-radius: 0;
+    color: $headingColor;
+    font-size: 14px;
+    width: 100%;
+  }
+}
