@@ -1,0 +1,233 @@
+/*=========================
+13. Blog Post Style CSS
+==========================*/
+.blog-post {
+  margin-top: 30px;
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    @media #{$sm-device} {
+      margin-bottom: 30px;
+    }
+
+    &:before {
+      @include overlay($black, 0.5);
+      left: auto;
+      right: 0;
+      transition: 0.4s;
+      width: 0;
+    }
+
+    .blog-action {
+      text-align: center;
+
+      a {
+        border: 1px solid $white;
+        border-radius: 50%;
+        color: $white;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 30px);
+        transform: translate(-50%, -50%);
+        @include hide;
+        line-height: 53px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+          background-color: $brandColor;
+          border-color: $brandColor;
+        }
+      }
+    }
+  }
+
+  &__content {
+    .post {
+      &-date {
+        color: $paragraph;
+        font-size: 14px;
+        font-family: $font-pd;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      &-title {
+        font-size: 18px;
+        font-family: $font-pd;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+
+        a {
+          color: $headingColor;
+
+          &:hover {
+            color: $brandColor;
+          }
+        }
+      }
+
+      &-meta {
+        margin-bottom: 20px;
+
+        a {
+          color: lighten($black, 67%);
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            color: $brandColor;
+          }
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .btn-read-more {
+      color: $paragraph;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-top: 35px;
+
+      @media #{$sm-device} {
+        margin-top: 25px;
+      }
+
+      &:hover {
+        color: $brandColor;
+      }
+    }
+  }
+
+  &:hover {
+    .blog-post__thumb {
+      &:before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+
+      .blog-action {
+        a {
+          left: 50%;
+          @include show;
+        }
+      }
+    }
+  }
+
+  &--2 {
+    .blog-post {
+      &__thumb {
+        margin-bottom: 20px;
+      }
+
+      &__content {
+        .post-title {
+          margin-bottom: 11px;
+        }
+
+        .post-meta {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &--3 {
+    .blog-post {
+      &__thumb {
+        margin-bottom: 20px;
+
+        &:before {
+          @include overlay($white, 0.4);
+          @include hide;
+        }
+
+        .blog-action {
+          a {
+            border: none;
+            font-size: 50px;
+            line-height: 1;
+            height: auto;
+            width: auto;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      &__content {
+        .post-title {
+          margin-bottom: 15px;
+          font-family: $baseFont;
+          font-weight: 400;
+          font-size: 26px;
+
+          @media #{$md-device, $sm-device} {
+            font-size: 20px;
+          }
+
+          a{
+            &:hover {
+              color: $secondaryColor;
+            }
+          }
+        }
+
+        .post-meta {
+          margin-bottom: 15px;
+        }
+
+        .btn-view-more {
+          color: $brandColor;
+          text-decoration: underline;
+          font-weight: 700;
+
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .blog-post {
+        &__thumb {
+          &:before {
+            @include show;
+          }
+        }
+      }
+    }
+  }
+
+  &.white-bg {
+    background-color: $white;
+
+    .blog-post__thumb {
+      margin-bottom: 0;
+    }
+
+    .blog-post__content {
+      padding: 25px;
+    }
+  }
+}
