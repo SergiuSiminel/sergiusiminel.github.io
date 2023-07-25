@@ -1048,6 +1048,9 @@ blockquote-title, .blockquote-title {
   font-weight: 700;
   text-transform: uppercase;
 }
+.main-nav li a:hover {
+  color: #b22c00;
+}
 .main-nav li.has-submenu {
   position: relative;
 }
