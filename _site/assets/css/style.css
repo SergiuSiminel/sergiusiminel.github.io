@@ -2075,23 +2075,19 @@ Scroll Top Button
   font-size: 14px;
   line-height: 1;
   font-weight: 700;
-  display: block;
-  position: relative;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  align-items: center;
 }
 .service-item .service-content__btn .btn-service:after {
   content: "\f105";
   font-family: "FontAwesome";
-  display: block;
+  display: inline-block;
   text-align: center;
   color: #dfdfdf;
   border-radius: 20px;
   border: 1px solid #e1e1e1;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   line-height: 40px;
   height: 40px;
@@ -4557,4 +4553,10 @@ Start Comment Area Wrapper
     height: 350px;
     margin-bottom: 40px;
   }
+}
+
+.call-to-action-area {
+    height: 358px;
+  display: flex;
+  align-items: center;
 }
