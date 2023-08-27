@@ -2,6 +2,16 @@
 layout: layout.njk
 title: Sergiu Siminel - Home
 ---
+
+
+<ul>
+{%- for blog in collections.blog -%}
+  <li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+
+
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
         <div class="page-tittle-wrap bg-img" data-bg="/assets/img/extra/page-header.jpg">
