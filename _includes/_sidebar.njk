@@ -5,6 +5,7 @@
                             <div class="sidebar-body">
                                 <div class="top-rated-product">
                                     {%- for blog in collections.blog -%}
+                                    {% if page.lang in blog.url %}
                                     <div class="top-rated-prod-item">
                                         <div class="blog-post__content">
                                             <h3><a href="{{ blog.url }}">{{ blog.data.title }}</a></h3>
@@ -17,6 +18,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    {% endif %}
                                     {%- endfor -%}
                                 </div>
                             </div>
