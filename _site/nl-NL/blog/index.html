@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js" lang="{{ page.lang }}">
+<html class="no-js" lang="nl-NL">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ title }}</title>
+    <title>Sergiu Siminel - Home</title>
 
     <!--== Favicon ==-->
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
@@ -59,13 +59,15 @@
                         <div class="header-config-content">
                             <ul class="config-nav nav">
                                 <li class="config-item">
-                                    <a href="">{{ 'language' | i18n }}: {{ 'current_language' | i18n }}</a>
+                                    <a href="">Taal: Nederlands</a>
                                     <ul class="config-option">
-                                        {% for lang in languages %}
-                                            {% if lang.code != page.lang %}
-                                                <li><a href="/{{ lang.code }}">{{ lang.name }}</a></li>
-                                            {% endif %}
-                                        {% endfor %}
+                                        
+                                            
+                                                <li><a href="/en-US">English</a></li>
+                                            
+                                        
+                                            
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -104,15 +106,15 @@
                         <nav class="site-navigation">
                             <ul class="main-nav nav">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="{{ '/over-mij' | locale_url }}">About me</a></li>
+                                <li><a href="/nl-NL/over-mij">About me</a></li>
                                 <li class="has-submenu"><a href="/diensten">Services</a>
                                     <ul class="submenu-nav">
                                         <li><a href="/diensten">Pricelist</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ '/partners' | locale_url }}">Partners</a></li>
-                                <li class="blog"><a href="{{ '/blog' | locale_url }}">Blog</a></li>
-                                <li><a href="{{ '/contact' | locale_url }}">Contact</a></li>
+                                <li><a href="/nl-NL/partners">Partners</a></li>
+                                <li class="blog"><a href="/nl-NL/blog">Blog</a></li>
+                                <li><a href="/nl-NL/contact">Contact</a></li>
                             </ul>
                         </nav>
                         <!-- End Site Navigation -->
@@ -149,7 +151,154 @@
     </header>
     <!--== End Header Area ==-->
 
-    {{ content | safe }}
+        <!--== Start Page Header Area ==-->
+    <div class="page-header-wrap">
+        <div class="page-tittle-wrap bg-img" data-bg="/assets/img/extra/page-header.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="page-tittle-content">
+                            <div class="page-tittle-inner">
+                                <h2>Blog</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Page Header Area ==-->
+
+    <!--== Start Blog Page Content ==-->
+    <div class="blog-page-content-wrap sp-y">
+        <div class="container">
+            <div class="blog-content-wrap layout-grid">
+                <div class="row mtn-30">
+                    <div class="col-md-6">
+                        <!--== Start Blog Post Item ==-->
+                        <div class="blog-post blog-post--3">
+                            <figure class="blog-post__thumb">
+                                <img src="/assets/img/blog/01.jpg" alt="Blog" />
+
+                                <figcaption class="blog-action">
+                                    <a href="blog-details.html"><i class="ion-ios-plus-empty"></i></a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="blog-post__content">
+                                <h2 class="post-title"><a href="blog-details.html">Learn about Karatin Hair Smoothing</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#"><i class="ion-person"></i> Raju Ahammad</a>
+                                    <a href="#"><i class="ion-clock"></i> March 7, 2019</a>
+                                    <a href="#"><i class="ion-chatboxes"></i> 2 Comments</a>
+                                </div>
+                                <div class="post-excerpt">
+                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
+                                        are constantly updating their skills through multiple skill developing seminars;
+                                        working side by side with world class hairstylists.</p>
+                                    <a href="blog-details.html" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--== End Blog Post Item ==-->
+                    </div>
+
+                    <div class="col-md-6">
+                        <!--== Start Blog Post Item ==-->
+                        <div class="blog-post blog-post--3">
+                            <figure class="blog-post__thumb">
+                                <img src="/assets/img/blog/02.jpg" alt="Blog" />
+
+                                <figcaption class="blog-action">
+                                    <a href="blog-details.html"><i class="ion-ios-plus-empty"></i></a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="blog-post__content">
+                                <h2 class="post-title"><a href="blog-details.html">The newest hair cuts to try this
+                                        fall!</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#"><i class="ion-person"></i> Raju Ahammad</a>
+                                    <a href="#"><i class="ion-clock"></i> March 7, 2019</a>
+                                    <a href="#"><i class="ion-chatboxes"></i> 2 Comments</a>
+                                </div>
+                                <div class="post-excerpt">
+                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
+                                        are constantly updating their skills through multiple skill developing seminars;
+                                        working side by side with world class hairstylists.</p>
+                                    <a href="blog-details.html" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--== End Blog Post Item ==-->
+                    </div>
+
+                    <div class="col-md-6">
+                        <!--== Start Blog Post Item ==-->
+                        <div class="blog-post blog-post--3">
+                            <figure class="blog-post__thumb">
+                                <img src="/assets/img/blog/03.jpg" alt="Blog" />
+
+                                <figcaption class="blog-action">
+                                    <a href="blog-details.html"><i class="ion-ios-plus-empty"></i></a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="blog-post__content">
+                                <h2 class="post-title"><a href="blog-details.html">Hair color trends for fall 2019!</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#"><i class="ion-person"></i> Raju Ahammad</a>
+                                    <a href="#"><i class="ion-clock"></i> March 7, 2019</a>
+                                    <a href="#"><i class="ion-chatboxes"></i> 2 Comments</a>
+                                </div>
+                                <div class="post-excerpt">
+                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
+                                        are constantly updating their skills through multiple skill developing seminars;
+                                        working side by side with world class hairstylists.</p>
+                                    <a href="blog-details.html" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--== End Blog Post Item ==-->
+                    </div>
+
+                    <div class="col-md-6">
+                        <!--== Start Blog Post Item ==-->
+                        <div class="blog-post blog-post--3">
+                            <figure class="blog-post__thumb">
+                                <img src="/assets/img/blog/04.jpg" alt="Blog" />
+
+                                <figcaption class="blog-action">
+                                    <a href="blog-details.html"><i class="ion-ios-plus-empty"></i></a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="blog-post__content">
+                                <h2 class="post-title"><a href="blog-details.html">Zorka Men Spring/Summer Vacation</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#"><i class="ion-person"></i> Raju Ahammad</a>
+                                    <a href="#"><i class="ion-clock"></i> March 7, 2019</a>
+                                    <a href="#"><i class="ion-chatboxes"></i> 2 Comments</a>
+                                </div>
+                                <div class="post-excerpt">
+                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
+                                        are constantly updating their skills through multiple skill developing seminars;
+                                        working side by side with world class hairstylists.</p>
+                                    <a href="blog-details.html" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--== End Blog Post Item ==-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Blog Page Content ==-->
 
     <!--== Start Footer Area ==-->
     <footer class="footer-area bg-img" data-bg="/assets/img/extra/footer_bg.png">
