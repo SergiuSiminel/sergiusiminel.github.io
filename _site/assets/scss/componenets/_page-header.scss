@@ -1,0 +1,69 @@
+/*============================
+19. Page Header Style CSS
+=============================*/
+.page-tittle-wrap{
+  position: relative;
+
+  &:before{
+    @include overlay($white, 0.9);
+  }
+
+  .page-tittle-content{
+    height: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$sm-device} {
+      height: 180px;
+    }
+
+    h2{
+      margin-bottom: 0;
+      font-weight: 100;
+      font-size: 65px;
+      line-height: 1;
+
+      @media #{$sm-device} {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.page-breadcrumb-wrap{
+  border-bottom: 1px solid $borderColor;
+  padding: 20px 0;
+  .breadcrumb{
+    background-color: transparent;
+    margin-bottom: 0;
+    padding: 0;
+
+    li{
+
+      &:before{
+        content: '\f3d1';
+        font-family: $ion-icon;
+        vertical-align: middle;
+      }
+
+      &:first-child{
+        &:before{
+          display: none;
+        }
+      }
+
+      a{
+        color: $blackSoft;
+
+        &:hover{
+          color: $brandColor;
+        }
+      }
+
+      &.active{
+        color: $brandColor;
+      }
+    }
+  }
+}

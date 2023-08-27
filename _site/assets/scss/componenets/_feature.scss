@@ -1,0 +1,62 @@
+/*==========================
+18. Feature Style CSS
+============================*/
+
+.feature-item {
+  margin-top: 30px;
+
+  &__icon {
+    background-color: lighten($black, 80%);
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    transition: 0.4s;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+
+    @media #{$sm-device} {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      background-color: $brandColor;
+    }
+  }
+
+  &--light{
+    color: $white;
+
+    .feature-item__icon:not(:hover){
+      background-color: lighten($black, 20%);
+    }
+  }
+}
+
+.feature-pic{
+  img{
+    width: 100%;
+  }
+}
+
+
+/*======================
+Banner Style CSS
+=======================*/
+.banner-content-inner{
+  height: 350px;
+  width: 100%;
+
+  @media #{$md-device} {
+    height: 300px;
+  }
+
+  @media #{$sm-device} {
+    height: 130px;
+  }
+}
+
+.director-message-content.sp-top{
+  @media #{$sm-device} {
+    padding-top: 35px;
+  }
+}
