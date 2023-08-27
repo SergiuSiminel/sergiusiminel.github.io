@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="{{ page.lang }}">
 
 <head>
     <meta charset="utf-8">
@@ -50,7 +50,6 @@
 </head>
 
 <body>
-
     <header class="header-area">
         <!-- Start Header Config Area -->
         <div class="header-config-area">
@@ -59,9 +58,14 @@
                     <div class="col-md-8 col-lg-6 d-none d-md-block">
                         <div class="header-config-content">
                             <ul class="config-nav nav">
-                                <li class="config-item"><a href="#">Language: English</a>
+                                <li class="config-item">
+                                    <a href="">{{ 'language' | i18n }}: {{ 'current_language' | i18n }}</a>
                                     <ul class="config-option">
-                                        <li><a href="#">Taal: Nederlands</a></li>
+                                        {% for lang in languages %}
+                                            {% if lang.code != page.lang %}
+                                                <li><a href="/{{ lang.code }}">{{ lang.name }}</a></li>
+                                            {% endif %}
+                                        {% endfor %}
                                     </ul>
                                 </li>
                             </ul>
@@ -83,7 +87,7 @@
 
         <!-- Start Header Navigation Area -->
 
-        
+
         <div class="header-nav-area">
             <div class="container">
                 <div class="row align-items-center position-relative">
@@ -99,19 +103,19 @@
                         <!-- Start Site Navigation -->
                         <nav class="site-navigation">
                             <ul class="main-nav nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/over-mij">About me</a></li>
-                                <li class="has-submenu"><a href="/diensten">Services</a>
+                                <li><a href="{{ '/' | locale_url }}">Home</a></li>
+                                <li><a href="{{ '/over-mij' | locale_url }}">About me</a></li>
+                                <li class="has-submenu"><a href="{{ '/diensten' | locale_url }}">Services</a>
                                     <ul class="submenu-nav">
-                                        <li><a href="/diensten">Pricelist</a></li>
+                                        <li><a href="{{ '/diensten' | locale_url }}">Pricelist</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/partners">Partners</a></li>
-                                <li class="blog"><a href="/blog">Blog</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="{{ '/partners' | locale_url }}">Partners</a></li>
+                                <li class="blog"><a href="{{ '/blog' | locale_url }}">Blog</a></li>
+                                <li><a href="{{ '/contact' | locale_url }}">Contact</a></li>
                             </ul>
                         </nav>
-                        <!-- End Site Navigation --> 
+                        <!-- End Site Navigation -->
                     </div>
                 </div>
             </div>
@@ -157,9 +161,9 @@
                             <h4 class="widget-title">Customer Care</h4>
                             <div class="widget-body">
                                 <ul class="widget-list">
-                                    <li><a href="/contact">Contact</a></li>
-                                    <li><a href="/contact">Make An Appointment</a></li>
-                                    <li><a href="/partners">Become Partners</a></li>
+                                    <li><a href="{{ '/contact' | locale_url }}">Contact</a></li>
+                                    <li><a href="{{ '/contact' | locale_url }}">Make An Appointment</a></li>
+                                    <li><a href="{{ '/partners' | locale_url }}">Become Partners</a></li>
                                     <li><a href="#">Returns Policy</a></li>
                                     <li><a href="#">Privacy & Security</a></li>
                                 </ul>
