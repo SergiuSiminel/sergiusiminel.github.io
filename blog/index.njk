@@ -4,14 +4,6 @@ title: Sergiu Siminel - Home
 ---
 
 
-<ul>
-{%- for blog in collections.blog -%}
-  <li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
-{%- endfor -%}
-</ul>
-
-
-
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
         <div class="page-tittle-wrap bg-img" data-bg="/assets/img/extra/page-header.jpg">
@@ -35,124 +27,39 @@ title: Sergiu Siminel - Home
         <div class="container">
             <div class="blog-content-wrap layout-grid">
                 <div class="row mtn-30">
+                    {%- for blog in collections.blog -%}
+                    
                     <div class="col-md-6">
                         <!--== Start Blog Post Item ==-->
                         <div class="blog-post blog-post--3">
                             <figure class="blog-post__thumb">
-                                <img src="/assets/img/blog/01.png" alt="Blog" />
+                                <img src="{{ blog.data.image }}" alt="Blog" />
 
                                 <figcaption class="blog-action">
-                                    <a href="/blog/blog1"><i class="ion-ios-plus-empty"></i></a>
+                                    <a href="{{ blog.url }}"><i class="ion-ios-plus-empty"></i></a>
                                 </figcaption>
                             </figure>
 
                             <div class="blog-post__content">
-                                <h2 class="post-title"><a href="/blog/blog1">Essential Hair Treatment Tips for Healthy and Gorgeous Locks</a>
+                                <h2 class="post-title"><a href="/blog/blog1">{{ blog.data.title }}</a>
                                 </h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <i class="ion-person"></i> Sergiu Siminel
+                                    <i class="ion-clock"></i> {{ blog.dat }}
                                 </div>
                                 <div class="post-excerpt">
-                                    <p>Discover the secret to lustrous, healthy hair with these essential tips: from regular deep 
-                                        conditioning to proper heat protection, scalp care, and choosing the right products. 
-                                        Embrace natural remedies and a balanced diet for vibrant locks that reflect your inner beauty.</p>
-                                    <a href="/blog/blog1" class="btn-view-more">Read More</a>
+                                    <p>{{ blog.data.longteaser }}</p>
+                                    <a href="{{ blog.url }}" class="btn-view-more">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <!--== End Blog Post Item ==-->
                     </div>
 
-                    <div class="col-md-6">
-                        <!--== Start Blog Post Item ==-->
-                        <div class="blog-post blog-post--3">
-                            <figure class="blog-post__thumb">
-                                <img src="/assets/img/blog/02.png" alt="Blog" />
-
-                                <figcaption class="blog-action">
-                                    <a href="/blog/blog2"><i class="ion-ios-plus-empty"></i></a>
-                                </figcaption>
-                            </figure>
-
-                            <div class="blog-post__content">
-                                <h2 class="post-title"><a href="/blog/blog2">The newest hair cuts to try this
-                                        fall!</a>
-                                </h2>
-                                <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
-                                </div>
-                                <div class="post-excerpt">
-                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
-                                        are constantly updating their skills through multiple skill developing seminars;
-                                        working side by side with world class hairstylists.</p>
-                                    <a href="/blog/blog2" class="btn-view-more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--== End Blog Post Item ==-->
-                    </div>
-
-                    <div class="col-md-6">
-                        <!--== Start Blog Post Item ==-->
-                        <div class="blog-post blog-post--3">
-                            <figure class="blog-post__thumb">
-                                <img src="/assets/img/blog/03.png" alt="Blog" />
-
-                                <figcaption class="blog-action">
-                                    <a href="/blog/blog3"><i class="ion-ios-plus-empty"></i></a>
-                                </figcaption>
-                            </figure>
-
-                            <div class="blog-post__content">
-                                <h2 class="post-title"><a href="/blog/blog3">Discover Your Signature Style: Latest Cutting Techniques Unveiled</a>
-                                </h2>
-                                <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
-                                </div>
-                                <div class="post-excerpt">
-                                    <p>Explore the realm of cutting-edge cutting techniques in our blog. From precision cuts to 
-                                        textured layers, find your perfect look with our skilled stylists. Whether it's a chic 
-                                        blunt bob or an edgy undercut, let your hair reflect your unique style at our salon.</p>
-                                    <a href="/blog/blog3" class="btn-view-more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--== End Blog Post Item ==-->
-                    </div>
-
-                    <div class="col-md-6">
-                        <!--== Start Blog Post Item ==-->
-                        <div class="blog-post blog-post--3">
-                            <figure class="blog-post__thumb">
-                                <img src="/assets/img/blog/04.jpg" alt="Blog" />
-
-                                <figcaption class="blog-action">
-                                    <a href="/blog/blog4"><i class="ion-ios-plus-empty"></i></a>
-                                </figcaption>
-                            </figure>
-
-                            <div class="blog-post__content">
-                                <h2 class="post-title"><a href="/blog/blog4">Zorka Men Spring/Summer Vacation</a>
-                                </h2>
-                                <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
-                                </div>
-                                <div class="post-excerpt">
-                                    <p>In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
-                                        are constantly updating their skills through multiple skill developing seminars;
-                                        working side by side with world class hairstylists.</p>
-                                    <a href="/blog/blog4" class="btn-view-more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--== End Blog Post Item ==-->
-                    </div>
+                    {%- endfor -%}
                 </div>
             </div>
         </div>
     </div>
     <!--== End Blog Page Content ==-->
+    
