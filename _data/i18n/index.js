@@ -12,7 +12,7 @@ module.exports = {
     'en-US': 'English'
   },
   about_me: {
-    'nl-NL': 'Over test mij',
+    'nl-NL': 'Over mij',
     'en-US': 'About me'
   },
   language: {

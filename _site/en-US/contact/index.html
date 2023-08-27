@@ -135,7 +135,7 @@
                     <div class="col-12 text-center">
                         <div class="page-tittle-content">
                             <div class="page-tittle-inner">
-                                <h2>About me</h2>
+                                <h2>Contact</h2>
                             </div>
                         </div>
                     </div>
@@ -145,87 +145,59 @@
     </div>
     <!--== End Page Header Area ==-->
 
-    <!--== Start About Page Content  ==-->
-    <div class="about-page-content">
+    <!--== Start Contact Page Content  ==-->
+    <div class="contact-page-content-wrap sp-y">
         <div class="container">
-            <div class="row mb-100 mb-sm-30">
-                <div class="col-12 text-center">
-                    <img src="/assets/img/about/about-us.jpg" alt="About" />
-                </div>
-            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map-area-wrap">
+                        <div id="map_content" class="h-100" data-lat="52.367229" data-lng="4.882362" data-zoom="15"></div>
 
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="about-thumb">
-                        <img src="/assets/img/about/home-3-about.jpg" alt="About" />
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-8">
-                    <div class="about-txt">
-                        <div class="section-title section-title--3 left-align mb-0">
-                            <p>Whether it’s edgy and modern or sleek and elegant, I strive to create the perfect look for
-                                each individual client. I'm also determined to provide each and every client with the
-                                highest degree of customer service in a friendly and professional setting. I am dedicated
-                                to performing our craft exceptionally well. To sum up: I do not want any single client to
-                                believe he or she can be better served at any other salon.</p>
+                <div class="col-md-6">
+                    <div class="contact-form-area">
+                        <h4>Get in touch</h4>
+                        <p>You can fill in this form if you want to make an appointment or get in touch with me. <br> I will contact you as soon as possible.</p>
+
+                        <div class="contact-form-wrap comment-area-wrapper p-0 m-0">
+                            <form action="/assets/php/mail.php" id="contact-form">
+                                <div class="form-content-wrap">
+                                    <div class="form-input-item">
+                                        <label for="name" class="sr-only">Name</label>
+                                        <input type="text" id="name" name="con_name" placeholder="Name *" required>
+                                    </div>
+
+                                    <div class="form-input-item">
+                                        <label for="email" class="sr-only">Email</label>
+                                        <input type="text" id="email" name="con_email" placeholder="Email">
+                                    </div>
+
+                                    <div class="form-input-item">
+                                        <label for="phone" class="sr-only">Phone number</label>
+                                        <input type="number" id="phone" name="con_phone" placeholder="Phone *" required>
+                                    </div>
+
+                                    <div class="form-input-item">
+                                        <label for="message" class="sr-only">Message *</label>
+                                        <textarea name="con_message" id="message" cols="30" rows="5" placeholder="Write Your Message *" required></textarea>
+                                    </div>
+
+                                    <div class="form-submit mt-40">
+                                        <button class="btn btn-hvr-brand">Send</button>
+
+                                        <div class="form-message"></div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--== End About Page Content  ==-->
-
-    <!--== Start Services Area ==-->
-    <div class="service-area sp-top b bg-img" data-bg="/assets/img/service/service-bg-2.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title section-title--3">
-                        <h2>My Services</h2>
-                        <p>I give a thorough consultation concerning your individual needs and desires before every service.
-                            My main goal is to make sure I meet and exceed your expectations.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mtn-30">
-                <div class="col-sm-6 col-lg-3">
-                    <!-- Start Service Item -->
-                    <div class="service-item service-item--2">
-                        <img src="/assets/img/service/h-3-1.png" alt="Service">
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <!-- Start Service Item -->
-                    <div class="service-item service-item--2">
-                        <img src="/assets/img/service/h-3-2.png" alt="Service">
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <!-- Start Service Item -->
-                    <div class="service-item service-item--2">
-                        <img src="/assets/img/service/h-3-3.png" alt="Service">
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <!-- Start Service Item -->
-                    <div class="service-item service-item--2">
-                        <img src="/assets/img/service/h-3-4.png" alt="Service">
-                    </div>
-                    <!-- End Service Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--== End Services Area ==-->
+    <!--== End Contact Page Content  ==-->
 
     <!--== Start Footer Area ==-->
     <footer class="footer-area bg-img" data-bg="/assets/img/extra/footer_bg.png">
