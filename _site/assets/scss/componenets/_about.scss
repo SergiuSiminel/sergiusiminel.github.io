@@ -1,0 +1,234 @@
+/*=============================
+08. About Area Style CSS
+==============================*/
+
+.about-area {
+  .director-info {
+    img {
+      @media #{$md-device} {
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+.about-txt {
+  &.home-3 {
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      font-family: $font-pd;
+      margin-top: -7px;
+    }
+
+    h6 {
+      font-size: 14px;
+      font-family: $font-pd;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+}
+
+.offer-area {
+  position: relative;
+  overflow: hidden;
+
+  @media #{$md-device} {
+    margin-top: 90px;
+  }
+
+  @media #{$sm-device} {
+    margin-top: 60px;
+  }
+
+  &:before {
+    @include overlay($black, 0.7);
+    z-index: 1;
+  }
+
+  h4 {
+    border: 3px solid $white;
+    color: $white;
+    font-family: $font-pd;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 205px;
+    z-index: 2;
+  }
+
+  img {
+    transition: 0.4s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.video-popup-content {
+  position: relative;
+  text-align: center;
+  padding: 40px 60px;
+  z-index: 1;
+
+  @media #{$sm-device} {
+    padding: 20px 25px;
+  }
+
+  &:before {
+    border: 1px solid $borderColor;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 80px);
+    width: calc(100% - 120px);
+    z-index: -1;
+
+    @media #{$sm-device} {
+      height: calc(100% - 40px);
+      width: calc(100% - 50px);
+    }
+  }
+
+  &:after {
+    background-color: $offWhite;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 80px);
+    width: calc(100% - 120px);
+    z-index: -2;
+
+    @media #{$sm-device} {
+      height: calc(100% - 40px);
+      width: calc(100% - 50px);
+    }
+  }
+
+  img {
+    margin: auto;
+    width: 100%;
+  }
+
+  &--2 {
+    padding: 0;
+    @media #{$xl-device} {
+      margin-right: -420px;
+    }
+
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
+
+.btn-play {
+  background-color: $white;
+  border-radius: 50%;
+  color: darken($black, 20%);
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 68px;
+  height: 68px;
+  width: 68px;
+  z-index: 98;
+
+  @media #{$xs-device} {
+    font-size: 18px;
+    line-height: 38px;
+    height: 38px;
+    width: 38px;
+  }
+
+  i {
+    padding-left: 5px;
+  }
+
+  &:before {
+    background-color: $white;
+    border-radius: 50%;
+    content: '';
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 82px;
+    z-index: 97;
+
+    @media #{$xs-device} {
+      line-height: 38px;
+      height: 52px;
+      width: 52px;
+    }
+  }
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.salon-gallery-item {
+  margin-top: 30px;
+}
+
+.about-me-page-content {
+  h6 {
+    font-weight: 700;
+    color: $secondaryColor;
+    font-size: $baseFontSize;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+.creative-approach-wrap {
+  border-top: 1px solid $borderColor;
+  padding-top: 70px;
+  margin-top: 70px;
+
+  @media #{$sm-device} {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+}
+
+.creative-approach-item {
+  margin-top: 30px;
+
+  .serial-no {
+    font-size: 48px;
+    line-height: 1;
+    color: $secondaryColor;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  h5 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

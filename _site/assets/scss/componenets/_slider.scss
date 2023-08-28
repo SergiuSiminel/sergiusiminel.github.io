@@ -1,0 +1,322 @@
+/*======================
+16. Slider Style CSS
+=======================*/
+.slider-content-wrap {
+  .slider-slide-item-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    z-index: 1;
+
+    @media #{$md-device} {
+      height: 600px;
+    }
+
+    @media #{$sm-device} {
+      height: auto;
+      display: block;
+      padding-top: 60px;
+    }
+
+    .slider-slide {
+      &-left {
+        max-width: 385px;
+        flex-basis: 385px;
+
+        @media #{$sm-device} {
+          text-align: center;
+          margin: 0 auto 40px;
+        }
+
+        h2 {
+          font-family: $font-pd;
+          font-size: 70px;
+          font-weight: 700;
+          margin-bottom: 30px;
+
+          @media #{$lg-device} {
+            font-size: 60px;
+          }
+
+          @media #{$md-device} {
+            font-size: 40px;
+          }
+
+          @media #{$sm-device} {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      &-right {
+        text-align: center;
+        max-width: 295px;
+
+        @media #{$sm-device} {
+          margin: 0 auto 30px;
+        }
+
+        h4 {
+          color: $paragraph;
+          font-size: 24px;
+          margin-bottom: 5px;
+          margin-top: 22px;
+        }
+      }
+
+      &-pic {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        text-align: center;
+        z-index: -1;
+
+        @media #{$sm-device} {
+          position: static;
+          transform: none;
+        }
+
+        img {
+          @media #{$sm-device} {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  &.slider-home-4 {
+    .slider-slide-item-inner {
+      height: 485px;
+
+      @media #{$sm-device} {
+        height: 350px;
+        display: flex;
+        padding-top: 0;
+      }
+
+      .slide-content {
+        padding-left: 65px;
+
+        @media #{$xs-device} {
+          padding-left: 30px;
+        }
+
+        .layer-1 {
+          font-size: 90px;
+          line-height: 1;
+          color: $white;
+          font-weight: 100;
+          max-width: 300px;
+
+          @media #{$sm-device} {
+            font-size: 50px;
+          }
+        }
+
+        .layer-2 {
+          color: $white;
+          font-weight: 700;
+          font-family: $font-pd;
+          font-style: italic;
+        }
+
+        .layer-3 {
+          color: $white;
+          text-transform: uppercase;
+          font-style: italic;
+          letter-spacing: 1.5px;
+          position: relative;
+          margin-top: 30px;
+          display: inline-block;
+          padding-left: 20px;
+
+          &:before {
+            background-image: url('../img/slider/home4/slide-1-2.png');
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 189px;
+            height: 71px;
+            z-index: -1;
+          }
+        }
+
+        .layer-5 {
+          color: $white;
+          font-size: 60px;
+          font-weight: 100;
+          max-width: 300px;
+
+          @media #{$sm-device} {
+            font-size: 30px;
+          }
+        }
+
+        .layer-6 {
+          font-weight: 700;
+          font-style: italic;
+          position: relative;
+
+          &:before {
+            background-image: url('../img/slider/home4/slide-3-2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 7px;
+            z-index: -1;
+            height: 100%;
+            width: 180px;
+
+            @media #{$xs-device} {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+
+    &.large-height {
+      .slider-slide-item-inner {
+        height: 900px;
+
+        @media #{$md-device} {
+          height: 600px;
+        }
+
+        @media #{$sm-device} {
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+.slider-carousel {
+  position: relative;
+
+  .lSAction {
+    a {
+      background-color: rgba($black, 0.3);
+      border-radius: 50%;
+      color: $white;
+      display: block;
+      font-size: 30px;
+      text-align: center;
+      line-height: 60px;
+      height: 60px;
+      width: 60px;
+
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      @include hide;
+
+      @media #{$sm-device} {
+        font-size: 20px;
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        left: 10px;
+      }
+
+      i {
+        margin-left: -5px;
+      }
+
+      &.lSNext {
+        left: auto;
+        right: 50px;
+
+        @media #{$sm-device} {
+          right: 10px;
+        }
+
+        i {
+          margin-left: 0;
+          margin-right: -5px;
+        }
+      }
+
+      &:hover {
+        background-color: $brandColor;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &:hover {
+    .lSAction {
+      a {
+        @include show;
+      }
+    }
+  }
+}
+
+.slider-banner-wrap {
+  position: relative;
+
+  .slider-banner {
+    &-item {
+      height: 485px;
+
+      @media #{$sm-device} {
+        height: 350px;
+      }
+    }
+  }
+
+  .lSPager {
+    &.lSpg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) !important;
+      bottom: 20px;
+
+      li {
+        padding: 0 3px;
+
+        a {
+          border: 1px solid $borderColor;
+          background-color: $borderColor;
+        }
+
+        &.active, &:hover {
+          a {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-bg-wrapper {
+  height: 750px;
+
+  @media #{$md-device} {
+    height: 550px;
+  }
+
+  @media #{$sm-device} {
+    height: 350px;
+  }
+}
+
+.slider-slide-pic.slide-2-1{
+  img{
+    @media #{$md-device} {
+      max-width: 200px;
+    }
+  }
+}
