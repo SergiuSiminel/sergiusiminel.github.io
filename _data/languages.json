@@ -1,10 +1,12 @@
 [
   {
     "code": "en-US",
+    "language": "Language",
     "name": "English"
   },
   {
     "code": "nl-NL",
+    "language": "Taal",
     "name": "Nederlands"
   }
 ]

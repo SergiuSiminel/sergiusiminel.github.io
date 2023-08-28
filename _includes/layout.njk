@@ -63,7 +63,7 @@
                                     <ul class="config-option">
                                         {% for lang in languages %}
                                             {% if lang.code != page.lang %}
-                                                <li><a href="/{{ lang.code }}">{{ lang.name }}</a></li>
+                                                <li><a href="/{{ lang.code }}">{{ lang.language }}: {{ lang.name }}</a></li>
                                             {% endif %}
                                         {% endfor %}
                                     </ul>
@@ -145,7 +145,7 @@
 
                     <div class="col-sm-6 col-lg-4">
                         <div class="widget-item">
-                            <h4 class="widget-title">Contact us</h4>
+                            <h4 class="widget-title">Contact Us</h4>
                             <div class="widget-body">
                                 <div class="keepintouch">
                                     <p><i class="ion-android-call"></i><a href="callto:0644272055">06-44272055</a></p>
