@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/:path((?!(nl-NL|en-US)/).*)",
-      "destination": "/en-US/:path*"
+      "source": "/",
+      "destination": "/en-US/"
     }
   ]
 }
