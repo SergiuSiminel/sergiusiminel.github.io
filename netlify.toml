@@ -1,0 +1,23 @@
+# Redirect any URLs with the language code in them already
+[[redirects]]
+from = "/en-US/*"
+to = "/:splat"
+status = 301
+force = true
+
+# Important: Per shadowing rules, URLs for the
+# _non-default_ language-specific content files
+# are served without redirects.
+
+# Redirect for end-user’s browser preference override
+[[redirects]]
+from = "/*"
+to = "/nl-NL/:splat"
+status = 302
+conditions = {Language = ["nl-NL"]}
+
+# Default
+[[redirects]]
+from = "/*"
+to = "/en-US/:splat"
+status = 200
