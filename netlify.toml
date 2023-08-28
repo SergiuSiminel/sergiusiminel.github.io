@@ -1,13 +1,15 @@
-# Redirect any URLs with the language code in them already
+# Content negotiation for home page
 [[redirects]]
-from = "/en-US/*"
-to = "/:splat"
-status = 301
-force = true
+from = "/"
+to = "/nl-NL/"
+status = 200
+conditions = {Language = ["nl-NL"]}
 
-# Important: Per shadowing rules, URLs for the
-# _non-default_ language-specific content files
-# are served without redirects.
+# Content negotiation for home page
+[[redirects]]
+from = "/"
+to = "/en-US/"
+status = 200
 
 # Redirect for end-user’s browser preference override
 [[redirects]]
@@ -20,4 +22,4 @@ conditions = {Language = ["nl-NL"]}
 [[redirects]]
 from = "/*"
 to = "/en-US/:splat"
-status = 200
+status = 302
