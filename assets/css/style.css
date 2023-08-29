@@ -4571,3 +4571,7 @@ Start Comment Area Wrapper
 .white-space {
   height: 50px; /* Adjust the height as needed */
 }
+
+.service-area h2 {
+  padding-top: 1.5em;
+}
