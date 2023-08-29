@@ -11,9 +11,9 @@ module.exports = {
     'nl-NL': 'Engels',
     'en-US': 'English'
   },
-  about_me: {
-    'nl-NL': 'Over mij',
-    'en-US': 'About me'
+  about_us: {
+    'nl-NL': 'Over ons',
+    'en-US': 'About us'
   },
   language: {
     'nl-NL': 'Taal',
