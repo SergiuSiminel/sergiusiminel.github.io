@@ -118,6 +118,26 @@
                         </nav>
                         <!-- End Site Navigation -->
                     </div>
+                    <div class="col-4 col-lg-1">
+                    <!-- Start Search Box Area -->
+                        <div class="search-box-wrap">
+                            <ul class="search-box-inner nav">
+                                <li>
+                                    <div class="header-search-box">
+                                        <form action="#">
+                                            <div class="search-box-content">
+                                                <label for="search" class="sr-only"></label>
+                                                <input type="search" id="search" placeholder="type here and hit enter" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="d-lg-none"><a href="javascript:void(0)" class="btn-menu"><i
+                                    class="ion-navicon"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Search Box Area -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,6 +196,33 @@
         </div>
     </footer>
     <!--== End Footer Area ==-->
+
+<!-- Start Responsive Menu Wrapper -->
+<aside class="off-canvas-wrapper off-canvas-menu">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner">
+        <!-- Start Off Canvas Content -->
+        <div class="off-canvas-content">
+            <div class="off-canvas-header">
+                <div class="logo">
+                    <a href="{{ '/index' | locale_url }}"><img src="/assets/img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="close-btn">
+                    <button class="btn-close"><i class="ion-close"></i></button>
+                </div>
+            </div>
+
+            <div class="res-mobile-menu mobile-menu">
+
+            </div>
+
+            <div class="mobile-menu res-site-config">
+
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- End Responsive Menu Wrapper -->
 
     <!--=======================Javascript============================-->
     <!-- build:js /assets/js/app.min.js -->

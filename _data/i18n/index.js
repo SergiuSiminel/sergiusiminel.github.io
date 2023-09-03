@@ -22,5 +22,13 @@ module.exports = {
   explore_now: {
     'nl-NL': 'Ontdek nu',
     'en-US': 'Explore now'
+  },
+  read: {
+    'nl-NL': 'Lees meer',
+    'en-US': 'Read more'
+  },
+  all_posts: {
+    'nl-NL': 'Bekijk alle berichten',
+    'en-US': 'View all posts'
   }
 };
