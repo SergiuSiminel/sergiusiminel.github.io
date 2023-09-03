@@ -43,18 +43,6 @@ module.exports = {
     'nl-NL': 'Bekijk alle berichten',
     'en-US': 'View all posts'
   },
-  blog1_titel: {
-    'nl-NL': 'Essentiele Verzorgingstips',
-    'en-US': 'Essential Hair Tips'
-  },
-  blog2_titel: {
-    'nl-NL': 'Latest Hair Coloring Techniques',
-    'en-US': 'Nieuwste kleurtechnieken'
-  },
-  blog3_titel: {
-    'nl-NL': 'Nieuwste Kniptechnieken',
-    'en-US': 'Latest Cutting Techniques'
-  },
   appointment: {
     'nl-NL': 'Maak een afspraak',
     'en-US': 'Make an appointment'

@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 image: /assets/img/blog/03.png
-title: {{ 'blog1_titel' | i18n }} 
+title: Latest Cutting Techniques
 teaser: >
     Discover cutting-edge techniques in our blog, from precision cuts to textured layers. Our skilled stylists create your unique 
     look, whether it's a chic blunt bob or an edgy undercut, showcasing your style at our salon.
@@ -38,14 +38,14 @@ author: Sergey Siminel
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="{{ blog.data.image }}" alt="Blog" />
+                            <img src="{{ image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">{{ blog.data.title }}</h2>
+                                <h2 class="post-title">{{ title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
-                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
+                                    <a href="#"><i class="ion-person"></i>{{ author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ dat }}</a>
                                 </div>
 
                                 <p>Welcome to the realm of hair transformation! In this blog, we're diving deep into the world of 
