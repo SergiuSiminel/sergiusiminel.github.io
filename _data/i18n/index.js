@@ -19,4 +19,8 @@ module.exports = {
     'nl-NL': 'Taal',
     'en-US': 'Language'
   }
+  explore_now: {
+    'nl-NL': 'Ontdek nu',
+    'en-US': 'Explore now'
+  }
 };
