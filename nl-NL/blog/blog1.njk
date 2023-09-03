@@ -3,14 +3,15 @@ layout: layout.njk
 image: /assets/img/blog/01.jpg
 title: {{ 'blog1_titel' | i18n }} 
 teaser: >
-    Unlock healthy, lustrous hair with tips including deep conditioning, heat protection, scalp care, product selection, 
-    natural remedies, and a balanced diet for vibrant locks that reflect inner beauty.
+    Ontgrendel gezond, glanzend haar met tips, waaronder diepe verzorging, hittebescherming, hoofdhuidverzorging, productselectie, 
+    natuurlijke remedies en een gebalanceerd dieet voor levendige lokken die innerlijke schoonheid weerspiegelen.
 longteaser: >
-    Discover the secret to lustrous, healthy hair with these essential tips: from regular deep 
-    conditioning to proper heat protection, scalp care, and choosing the right products. 
-    Embrace natural remedies and a balanced diet for vibrant locks that reflect your inner beauty
+    Ontdek het geheim van glanzend, gezond haar met deze essentiële tips: van regelmatige diepe verzorging tot de juiste 
+    hittebescherming, hoofdhuidverzorging en het kiezen van de juiste producten. Omarm natuurlijke remedies en een gebalanceerd 
+    dieet voor levendige lokken die jouw innerlijke schoonheid weerspiegelen.
 tags: blog
 dat: 27-08-2023
+author: Sergey Siminel
 ---
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
@@ -37,58 +38,39 @@ dat: 27-08-2023
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="/assets/img/blog/01.jpg" alt="Blog" />
+                            <img src="{{ blog.data.image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">Essential Hair Tips</h2>
+                                <h2 class="post-title">{{ blog.data.title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
                                 </div>
-                                <p>Your hair is more than just a part of your appearance; it's a canvas of self-expression and 
-                                    confidence. Whether you're aiming for silky-smooth locks or luscious waves, achieving healthy, 
-                                    beautiful hair is within your reach. In this blog, we've gathered essential tips to help you on 
-                                    your journey to vibrant and stunning hair.</p>
-                                <p><strong>1. Tailored Shampoo Selection</strong>: It all begins with the basics – shampoo. To 
-                                ensure optimal hair health, select shampoo products that match your scalp type and concerns. 
-                                Whether you have a dry, oily, or sensitive scalp, choosing the right shampoo can make a world of 
-                                difference in maintaining balance and cleanliness.</p>
-                                <p><strong>2. Matching Hair Care Products</strong>: Extend your hair care routine beyond shampoo by 
-                                carefully selecting conditioners, masks, and styling products tailored to your specific hair type 
-                                and concerns. This personalized approach ensures your hair receives the nutrients and treatments it 
-                                truly needs.</p>
-                                <p><strong>3. Gentle Detangling</strong>: Before and after washing, handle your hair with care. 
-                                Go easy on the brushing and detangling process. Start from the ends and work your way up to avoid 
-                                unnecessary stress on your strands. This simple practice can help maintain hair strength and minimize 
-                                breakage.</p>
-                                <p><strong>4. The Scalp's Role</strong>: A healthy scalp serves as the foundation for vibrant hair. 
-                                Treat yourself to a gentle scalp massage during your showers to stimulate blood flow and promote 
-                                healthy hair growth. It's a soothing ritual that benefits both your scalp and your overall hair 
-                                health.</p>
-                                <p><strong>5. Double Shampoo Rinse</strong>: For a thorough clean, consider rinsing your hair twice 
-                                with shampoo. This ensures your hair is properly cleansed, allowing you to enjoy that extra day of 
-                                freshness.</p>
-                                <p><strong>6. Towel Drying</strong>: Before applying conditioner or a mask, remove excess water from 
-                                your hair with a towel. This helps the products penetrate your hair more effectively, maximizing 
-                                their benefits.</p>
-                                <p><strong>7. Patience with Treatment</strong>: When it comes to conditioning or using a hair mask, 
-                                patience is key. Wait for 3-4 minutes when using conditioner, and 15-20 minutes for a mask. This 
-                                time allows the products to work their magic and deeply nourish your hair.</p>
-                                <p><strong>8. Cold Water Finish</strong>: Finish your shower routine with a rinse of cold water. 
-                                This seemingly chilly step helps seal the hair cuticles, leaving your locks shinier and smoother. 
-                                It's a quick trick for that extra dose of luster.</p>
-                                <p><strong>9. Protect from Heat</strong>: Before subjecting your hair to styling tools, always 
-                                apply a heat protectant spray or leave-in products with built-in heat protection. This shield 
-                                safeguards your hair from the potential damage caused by curling irons, straighteners, and blow 
-                                dryers.</p>
-                                <p><strong>10. Nourishment from Within</strong>: Remember, the journey to beautiful hair starts 
-                                from within. Stay hydrated and maintain a balanced diet rich in vitamins, minerals, and proteins. 
-                                These nutrients support hair growth and vitality, ensuring your hair looks as healthy as it feels.</p>
-                                <p>In the realm of hair care, consistency is the key to success. By following these hair treatment 
-                                    tips and adapting them to your unique needs, you can unlock the door to radiant, healthy, and 
-                                    utterly gorgeous locks that reflect your inner beauty. Your hair is your canvas – treat it with 
-                                    care, and watch it flourish like never before.</p>
+                                <p>Je haar is meer dan alleen een onderdeel van je uiterlijk; het is een canvas van zelfexpressie 
+                                    en zelfvertrouwen. Of je nu streeft naar zijdezachte lokken of weelderige golven, gezond en 
+                                    prachtig haar bereiken is binnen handbereik. In deze blog hebben we essentiële tips verzameld 
+                                    om je te helpen op je reis naar levendig en prachtig haar.</p>
+                                <p><strong>1. Op Maat Gekozen Shampoo</strong>: Het begint allemaal met de basis - shampoo. Om de 
+                                optimale gezondheid van je haar te garanderen, selecteer shampoo producten die bij jouw hoofdhuidtype 
+                                en zorgen passen. Of je nu een droge, vette of gevoelige hoofdhuid hebt, het kiezen van de juiste 
+                                shampoo kan een wereld van verschil maken in het handhaven van balans en zuiverheid.</p>
+                                <p><strong>2. Passende Haarverzorgingsproducten</strong>: Breid je haarverzorgingsroutine uit buiten 
+                                de shampoo door zorgvuldig conditioners, maskers en stylingproducten te selecteren die zijn afgestemd 
+                                op jouw specifieke haartype en zorgen. Deze gepersonaliseerde aanpak zorgt ervoor dat je haar de 
+                                voedingsstoffen en behandelingen krijgt die het echt nodig heeft.</p>
+                                <p><strong>3. Voorzichtig Ontwarren</strong>: Behandel je haar voor en na het wassen met zorg. Wees 
+                                voorzichtig bij het borstelen en ontwarren. Begin bij de uiteinden en werk omhoog om onnodige stress 
+                                op je haarstrengen te voorkomen. Deze eenvoudige praktijk kan helpen om de haarkracht te behouden en breuk te minimaliseren.</p>
+                                <p><strong>4. De Rol van de Hoofdhuid</strong>: Een gezonde hoofdhuid dient als de basis voor levendig haar. Trakteer jezelf op een zachte hoofdhuidmassage tijdens je douches om de bloedcirculatie te stimuleren en gezonde haargroei te bevorderen. Het is een rustgevend ritueel dat zowel je hoofdhuid als je algehele haargezondheid ten goede komt.</p>
+                                <p><strong>5. Dubbele Shampoo Spoeling</strong>: Voor een grondige reiniging overweeg om je haar twee keer met shampoo te spoelen. Dit zorgt ervoor dat je haar goed wordt gereinigd, zodat je kunt genieten van die extra dag van frisheid.</p>
+                                <p><strong>6. Handdoek Droog</strong>: Voor het aanbrengen van conditioner of een masker, verwijder overtollig water uit je haar met een handdoek. Dit helpt de producten effectiever door je haar te laten dringen en maximaliseert hun voordelen.</p>
+                                <p><strong>7. Geduld met Behandelingen</strong>: Als het gaat om conditioner of een haarmasker, is geduld de sleutel. Wacht 3-4 minuten bij gebruik van conditioner, en 15-20 minuten voor een masker. Deze tijd stelt de producten in staat om hun magie te laten werken en je haar diep te voeden.</p>
+                                <p><strong>8. Afwerking met Koud Water</strong>: Beëindig je doucheroutine met een spoeling met koud water. Deze ogenschijnlijk koude stap helpt om de haarschubben te sluiten, waardoor je lokken glanzender en gladder worden. Het is een snelle truc voor die extra dosis glans.</p>
+                                <p><strong>9. Bescherming tegen Hitte</strong>: Voordat je je haar blootstelt aan stylingtools, breng altijd een hittebeschermende spray of leave-in producten aan met ingebouwde hittebescherming. Dit schild beschermt je haar tegen mogelijke schade veroorzaakt door krultangen, stijltangen en föhns.</p>
+                                <p><strong>10. Voeding van Binnenuit</strong>: Onthoud, de reis naar mooi haar begint van binnenuit. Blijf gehydrateerd en behoud een gebalanceerd dieet rijk aan vitamines, mineralen en eiwitten. Deze voedingsstoffen ondersteunen de haargroei en vitaliteit, zorgen ervoor dat je haar er zo gezond uitziet als het aanvoelt.</p>
+                                <p>In de wereld van haarverzorging is consistentie de sleutel tot succes. Door deze haarverzorgingstips te volgen en aan te passen aan jouw unieke behoeften, kun je de deur openen naar stralend, gezond en absoluut prachtig haar dat jouw innerlijke schoonheid weers
+
                             </div>
                         </div>
                     </article>

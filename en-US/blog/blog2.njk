@@ -1,17 +1,18 @@
 ---
 layout: layout.njk
-image: /assets/img/blog/02.png
-title: > 
-    Latest Hair Coloring Techniques
+image: /assets/img/blog/02.jpg
+title: {{ 'blog1_titel' | i18n }} 
 teaser: >
-    Enter personalized beauty with new hair coloring techniques: Balayage's radiance, Smokey Silver's allure, and Neon Lights' 
-    vibrancy provide a canvas for self-expression. Embrace transformation as your hair tells your story through color.
+    Discover the latest in hair coloring techniques, from the natural radiance of Balayage to the 
+    captivating allure of the Black Out Technique and Highlights. These trends provide a unique way to express 
+    yourself through your hair, inviting you on a transformative journey of self-expression.
 longteaser: >
-    In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
-    are constantly updating their skills through multiple skill developing seminars;
-    working side by side with world class hairstylists.
+    Discover the latest in hair coloring techniques, from the natural radiance of Balayage to the 
+    captivating allure of the Black Out Technique and Highlights. These trends provide a unique way to express 
+    yourself through your hair, inviting you on a transformative journey of self-expression.
 tags: blog
 dat: 27-08-2023
+author: Sergey Siminel
 ---
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
@@ -38,14 +39,14 @@ dat: 27-08-2023
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="/assets/img/blog/02.png" alt="Blog" />
+                            <img src="{{ blog.data.image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">Latest Hair Coloring Techniques</h2>
+                                <h2 class="post-title">{{ blog.data.title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
                                 </div>
                                 <p>When it comes to transforming your hair, there's nothing quite like the power of a fresh color. 
                                     Whether you're looking to make a bold statement or simply enhance your natural beauty, the 

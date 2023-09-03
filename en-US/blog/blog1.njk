@@ -1,17 +1,17 @@
 ---
 layout: layout.njk
 image: /assets/img/blog/01.jpg
-title: > 
-    Essential Hair Tips
+title: {{ 'blog1_titel' | i18n }} 
 teaser: >
     Unlock healthy, lustrous hair with tips including deep conditioning, heat protection, scalp care, product selection, 
     natural remedies, and a balanced diet for vibrant locks that reflect inner beauty.
 longteaser: >
     Discover the secret to lustrous, healthy hair with these essential tips: from regular deep 
     conditioning to proper heat protection, scalp care, and choosing the right products. 
-    Embrace natural remedies and a balanced diet for vibrant locks that reflect your inner beauty
+    Embrace natural remedies and a balanced diet for vibrant locks that reflect your inner beauty.
 tags: blog
 dat: 27-08-2023
+author: Sergey Siminel
 ---
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
@@ -38,14 +38,14 @@ dat: 27-08-2023
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="/assets/img/blog/01.jpg" alt="Blog" />
+                            <img src="{{ blog.data.image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">Essential Hair Tips</h2>
+                                <h2 class="post-title">{{ blog.data.title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
                                 </div>
                                 <p>Your hair is more than just a part of your appearance; it's a canvas of self-expression and 
                                     confidence. Whether you're aiming for silky-smooth locks or luscious waves, achieving healthy, 

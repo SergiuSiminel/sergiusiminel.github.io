@@ -1,17 +1,17 @@
 ---
 layout: layout.njk
-image: /assets/img/blog/02.png
-title: > 
-    Latest Hair Coloring Techniques
+image: /assets/img/blog/02.jpg
+title: {{ 'blog2_titel' | i18n }}
 teaser: >
-    Enter personalized beauty with new hair coloring techniques: Balayage's radiance, Smokey Silver's allure, and Neon Lights' 
-    vibrancy provide a canvas for self-expression. Embrace transformation as your hair tells your story through color.
+    Ontdek de nieuwste haarkleurtechnieken, van natuurlijke Balayage tot de betoverende Black Out-techniek en Highlights. Deze 
+    trends bieden een unieke manier om jezelf uit te drukken via je haar, op een transformerende reis van zelfexpressie.
 longteaser: >
-    In order to keep up with the latest fashions and trends at Salon Rouge, our stylists
-    are constantly updating their skills through multiple skill developing seminars;
-    working side by side with world class hairstylists.
+    Ontdek de nieuwste haarkleurtechnieken, van de natuurlijke uitstraling van Balayage tot de betoverende aantrekkingskracht van 
+    de Black Out-techniek en Highlights. Deze trends bieden een unieke manier om jezelf uit te drukken via je haar en nodigen je 
+    uit op een transformerende reis van zelfexpressie.
 tags: blog
 dat: 27-08-2023
+author: Sergey Siminel
 ---
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
@@ -38,47 +38,52 @@ dat: 27-08-2023
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="/assets/img/blog/02.png" alt="Blog" />
+                            <img src="{{ blog.data.image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">Latest Hair Coloring Techniques</h2>
+                                <h2 class="post-title">{{ blog.data.title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
                                 </div>
-                                <p>When it comes to transforming your hair, there's nothing quite like the power of a fresh color. 
-                                    Whether you're looking to make a bold statement or simply enhance your natural beauty, the 
-                                    latest hair coloring techniques offer a world of possibilities. In this blog, we'll take you on 
-                                    a journey through some of the most exciting trends in hair coloring to help you elevate your 
-                                    look and stay on top of your style game.</p>
-                                <p><strong>1. Pastel Perfection</strong>: Pastel hair colors have been all the rage in recent years, 
-                                and they're showing no signs of slowing down. From dreamy lavender to soft rose gold, pastel shades 
-                                allow you to express your unique personality and add a touch of whimsy to your locks.</p>
-                                <p><strong>2. Warm and Ice Blonde</strong>: Blondes really do have more fun, especially when you 
-                                can choose between warm and icy tones. Warm blonde shades bring a sunny, beachy vibe to your hair, 
-                                while ice blonde hues offer a cool, sophisticated allure.</p>
-                                <p><strong>3. Balayage Brilliance</strong>: Balayage remains a favorite among hair color enthusiasts 
-                                for its natural and sun-kissed effect. This hand-painted technique creates a seamless transition from 
-                                darker roots to lighter ends, giving your hair a multidimensional look.</p>
-                                <p><strong>4. Airtouch Technique</strong>: For those seeking a low-maintenance yet stunning hair 
-                                color, the Airtouch technique is a game-changer. It blends colors flawlessly, ensuring a soft, 
-                                blended appearance and minimal regrowth visibility.</p>
-                                <p><strong>5. Highlights</strong>: Classic highlights are always in style. Whether you prefer subtle babylights or bolder 
-                                chunky highlights, this technique adds depth and dimension to your hair, creating a sunlit effect.</p>
-                                <p><strong>6. Chocolate and Red Shades</strong>: Rich chocolate browns and fiery reds are making a comeback. These warm, 
-                                luscious colors can instantly transform your hair, giving it a luxurious and sultry appeal.</p>
-                                <p><strong>7. Black Out Technique</strong>: If you're looking for a bold change, the black out technique might be your 
-                                answer. This daring style involves deep, glossy black hair color for a striking and dramatic look.</p>
-                                <p><strong>8. Total Blonde Technique</strong>: For the ultimate blonde bombshell look, consider the total blonde technique. 
-                                This involves lightening your hair to an all-over blonde shade, perfect for those who want to channel 
-                                their inner bombshell.</p>
-                                <p>With these latest hair coloring techniques, you can revamp your look and step out in style. 
-                                    Consult with your trusted hairdresser to determine which technique suits you best, taking 
-                                    into account your skin tone, lifestyle, and personal preferences. Whatever you choose, these 
-                                    trends are sure to help you make a statement and turn heads wherever you go.</p>
-                                <p>Ready to transform your hair? Schedule an appointment with us today, and let's bring your dream 
-                                    hair color to life!</p>
+                                <p>Als het gaat om het transformeren van je haar, is er niets dat kan tippen aan de kracht van een 
+                                    nieuwe haarkleur. Of je nu een gedurfde verklaring wilt maken of gewoon je natuurlijke schoonheid 
+                                    wilt versterken, de nieuwste haarkleurtechnieken bieden een wereld vol mogelijkheden. In deze blog 
+                                    nemen we je mee op een reis door enkele van de meest opwindende trends in haarkleuring om je look 
+                                    te verbeteren en je stijlspel op peil te houden.</p>
+                                <p><strong>1. Perfectie in Pasteltinten</strong>: Pastel haarkleuren zijn de laatste jaren razend 
+                                populair en tonen geen tekenen van vertraging. Van dromerig lavendel tot zacht roségoud stellen 
+                                pasteltinten je in staat om je unieke persoonlijkheid uit te drukken en een vleugje speelsheid aan 
+                                je lokken toe te voegen.</p>
+                                <p><strong>2. Warm en IJsblond</strong>: Blondines hebben echt meer plezier, vooral als je kunt kiezen 
+                                tussen warme en ijzige tinten. Warme blonde tinten brengen een zonnige, strandachtige sfeer in je haar, 
+                                terwijl ijzige blonde tinten een koele, verfijnde aantrekkingskracht bieden.</p>
+                                <p><strong>3. Balayage Briljantie</strong>: Balayage blijft favoriet onder liefhebbers van haarkleur 
+                                vanwege het natuurlijke en zonovergoten effect. Deze met de hand geschilderde techniek creëert een 
+                                naadloze overgang van donkere wortels naar lichtere uiteinden, waardoor je haar een multidimensionale 
+                                uitstraling krijgt.</p>
+                                <p><strong>4. Airtouch Techniek</strong>: Voor degenen die een onderhoudsarme maar prachtige haarkleur 
+                                willen, is de Airtouch-techniek een gamechanger. Het blendt kleuren perfect, zorgt voor een zachte, 
+                                vloeiende uitstraling en minimaliseert zichtbare uitgroei.</p>
+                                <p><strong>5. Highlights</strong>: Klassieke highlights zijn altijd in stijl. Of je nu subtiele 
+                                babylights of gedurfde chunky highlights verkiest, deze techniek voegt diepte en dimensie toe aan 
+                                je haar en creëert een zonovergoten effect.</p>
+                                <p><strong>6. Bruine en Rode Tinten</strong>: Rijke chocoladebruinen en vurige roodtinten maken een 
+                                comeback. Deze warme, weelderige kleuren kunnen je haar direct transformeren en het een luxe en 
+                                verleidelijke uitstraling geven.</p>
+                                <p><strong>7. Black Out Techniek</strong>: Als je op zoek bent naar een gedurfde verandering, zou de 
+                                Black Out-techniek wel eens het antwoord kunnen zijn. Deze gedurfde stijl omvat diep, glanzend zwart 
+                                haar voor een opvallende en dramatische look.</p>
+                                <p><strong>8. Totale Blonde Techniek</strong>: Voor de ultieme blonde uitstraling overweeg de totale 
+                                blonde techniek. Hierbij wordt je haar opgelicht naar een all-over blonde kleur, perfect voor degenen 
+                                die hun innerlijke blonde bombshell willen omarmen.</p>
+                                <p>Met deze nieuwste haarkleurtechnieken kun je je look een boost geven en stijlvol naar buiten 
+                                    stappen. Raadpleeg je vertrouwde kapper om te bepalen welke techniek het beste bij je past, 
+                                    rekening houdend met je huidskleur, levensstijl en persoonlijke voorkeuren. Wat je ook kiest, 
+                                    deze trends zullen je helpen een statement te maken en de aandacht te trekken waar je ook gaat.</p>
+                                <p>Klaar om je haar te transformeren? Maak vandaag nog een afspraak met ons en laten we je 
+                                    droomhaarkleur tot leven brengen!</p>
                             </div>
                         </div>
                     </article>

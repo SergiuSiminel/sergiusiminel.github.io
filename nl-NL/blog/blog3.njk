@@ -3,14 +3,15 @@ layout: layout.njk
 image: /assets/img/blog/03.png
 title: {{ 'blog3_titel' | i18n }}
 teaser: >
-    Discover cutting-edge techniques in our blog, from precision cuts to textured layers. Our skilled stylists create your unique 
-    look, whether it's a chic blunt bob or an edgy undercut, showcasing your style at our salon.
+    Ontdek baanbrekende technieken in onze blog, van precisieknipbeurten tot gelaagde texturen. Onze ervaren stylisten creëren 
+    jouw unieke look, of het nu gaat om een chique botte bob of een gedurfde undercut, en laten jouw stijl schitteren in onze salon.
 longteaser: >
-    Explore the realm of cutting-edge cutting techniques in our blog. From precision cuts to 
-    textured layers, find your perfect look with our skilled stylists. Whether it's a chic 
-    blunt bob or an edgy undercut, let your hair reflect your unique style at our salon.
+    Verken het rijk van geavanceerde kniptechnieken in onze blog. Van precieze knipbeurten tot gelaagde texturen, vind jouw 
+    perfecte look met onze ervaren stylisten. Of het nu gaat om een chique botte bob of een gedurfde undercut, laat je haar 
+    jouw unieke stijl weerspiegelen in onze salon.
 tags: blog
 dat: 27-08-2023
+author: Sergey Siminel
 ---
     <!--== Start Page Header Area ==-->
     <div class="page-header-wrap">
@@ -37,50 +38,42 @@ dat: 27-08-2023
                 <div class="col-lg-9">
                     <article class="blog-details-content">
                         <div class="blog-details-thumb mb-30 mb-sm-20">
-                            <img src="/assets/img/blog/03.png" alt="Blog" />
+                            <img src="{{ blog.data.image }}" alt="Blog" />
                         </div>
                         <div class="blog-details-txt blog-post--3">
                             <div class="blog-post__content">
-                                <h2 class="post-title">Latest Cutting Techniques</h2>
+                                <h2 class="post-title">{{ blog.data.title }}</h2>
                                 <div class="post-meta">
-                                    <a href="#"><i class="ion-person"></i> Sergiu Siminel</a>
-                                    <a href="#"><i class="ion-clock"></i> 27-08-2023</a>
+                                    <a href="#"><i class="ion-person"></i>{{ blog.data.author }}</a>
+                                    <a href="#"><i class="ion-clock"></i>{{ blog.data.dat }}</a>
                                 </div>
-
-                                <p>Welcome to the realm of hair transformation! In this blog, we're diving deep into the world of 
-                                    cutting-edge cutting techniques that are revolutionizing hairstyling trends. Get ready to discover 
-                                    how these techniques can elevate your look and boost your confidence.</p>
-
-                                <p><strong>1. Textured Layers</strong>: Say goodbye to flat and uninspired hair with textured layers. 
-                                This technique adds dimension, movement, and volume to your locks, creating a dynamic and lively 
-                                appearance that's easy to maintain.</p>
-
-                                <p><strong>2. Modern Pixie</strong>: The modern pixie cut combines elegance and daring. Shorter on 
-                                the sides and back with slightly longer layers on top, it's a versatile choice that can be styled 
-                                sleek and polished or edgy and tousled.</p>
-
-                                <p><strong>3. Long Layers</strong>: For those who love their length but crave movement, long layers 
-                                are a game-changer. Our stylists strategically place layers throughout your hair, resulting in a 
-                                cascading effect that adds depth and volume while maintaining the length you adore.</p>
-
-                                <p><strong>4. Curtain Bangs</strong>: Curtain bangs offer a versatile and charming touch to any 
-                                haircut. These center-parted, longer bangs frame your face and can be worn swept to the sides or 
-                                parted down the middle.</p>
-
-                                <p><strong>5. Blunt Bob</strong>: The timeless blunt bob has received a contemporary makeover. 
-                                With sharp lines and a sleek finish, this style exudes confidence and sophistication. Whether it's a 
-                                chin-length bob or a longer variation, the blunt cut is a versatile choice for any fashion-forward 
-                                individual.</p>
-
-                                <p><strong>6: The One-Length Cut</strong>: simplicity and elegance in one. 
-                                It offers a sleek, polished look adaptable for any occasion. Personalize it with color and style. 
-                                A timeless choice that combines beauty and sophistication.</p>
-
-                                <p>Each of these cutting techniques is a masterpiece waiting to be crafted by our skilled stylist. 
-                                    Whether you're seeking a classic makeover, an edgy transformation, or something in between, 
-                                    these techniques offer a personalized approach to hairstyling that accentuates your uniqueness. 
-                                    Step into our salon and experience the magic of the latest cutting techniques – let your hair 
-                                    be your canvas for self-expression and style evolution.</p>
+                                <p>Welkom in de wereld van haartransformatie! In deze blog duiken we in de wereld van geavanceerde 
+                                    kniptechnieken die de trends in kapsels revolutioneren. Maak je klaar om te ontdekken hoe deze 
+                                    technieken je look naar een hoger niveau kunnen tillen en je zelfvertrouwen kunnen vergroten.</p>
+                                <p><strong>1. Getextureerde Lagen</strong>: Zeg vaarwel tegen plat en inspiratieloos haar met 
+                                getextureerde lagen. Deze techniek voegt dimensie, beweging en volume toe aan je lokken, waardoor 
+                                een dynamische en levendige uitstraling ontstaat die eenvoudig te onderhouden is.</p>
+                                <p><strong>2. Moderne Pixie</strong>: De moderne pixie cut combineert elegantie en durf. Korter aan 
+                                de zijkanten en achterkant met iets langere lagen bovenop, het is een veelzijdige keuze die strak en 
+                                gepolijst of edgy en warrig gestyled kan worden.</p>
+                                <p><strong>3. Lange Lagen</strong>: Voor degenen die van hun lengte houden maar beweging willen, 
+                                zijn lange lagen een game-changer. Onze stylisten plaatsen strategisch lagen door je haar, resulterend 
+                                in een gelaagd effect dat diepte en volume toevoegt terwijl de gewenste lengte behouden blijft.</p>
+                                <p><strong>4. Curtain Bangs</strong>: Curtain bangs bieden een veelzijdige en charmante touch aan 
+                                elk kapsel. Deze midden-gescheiden, langere pony's omlijsten je gezicht en kunnen naar de zijkanten 
+                                worden gedragen of in het midden worden gescheiden.</p>
+                                <p><strong>5. Botte Bob</strong>: De tijdloze botte bob heeft een eigentijdse make-over gekregen. 
+                                Met strakke lijnen en een gladde afwerking straalt deze stijl zelfvertrouwen en verfijning uit. Of 
+                                het nu een bob op kinlengte is of een langere variant, de botte snit is een veelzijdige keuze voor 
+                                elke modebewuste persoon.</p>
+                                <p><strong>6: De Eenlengte Snit</strong>: Eenvoud en elegantie in één. Het biedt een strakke, 
+                                gepolijste look die geschikt is voor elke gelegenheid. Personaliseer het met kleur en stijl. Een 
+                                tijdloze keuze die schoonheid en verfijning combineert.</p>
+                                <p>Elke van deze kniptechnieken is een meesterwerk dat wacht om te worden gecreëerd door onze 
+                                    ervaren stylisten. Of je nu op zoek bent naar een klassieke make-over, een gedurfde transformatie, 
+                                    of iets daartussenin, deze technieken bieden een persoonlijke benadering van hairstyling die je 
+                                    uniekheid accentueert. Stap binnen in onze salon en ervaar de magie van de nieuwste 
+                                    kniptechnieken - laat je haar jouw canvas zijn voor zelfexpressie en stijlevolutie.</p>
                             </div>
                         </div>
                     </article>
