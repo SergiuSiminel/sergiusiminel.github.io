@@ -23,12 +23,12 @@ title: Sergiu Siminel - Home
                         <div class="blog-post__content">
                             <h2 class="post-title"><a href="{{ blog.url }}">{{ blog.data.title }}</a></h2>
                             <div class="post-meta">
-                                <i class="ion-person"></i> Sergiu Siminel
+                                <i class="ion-person"></i> Sergey Siminel
                                 <i class="ion-clock"></i> {{ blog.data.dat }}
                             </div>
                             <div class="post-excerpt">
                                 <p>{{ blog.data.longteaser }}</p>
-                                <a href="{{ blog.url }}" class="btn-view-more">Read More</a>
+                                <a href="{{ blog.url }}" class="btn-view-more">{{ 'read' | i18n }}</a>
                             </div>
                         </div>
                     </div>

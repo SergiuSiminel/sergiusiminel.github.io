@@ -15,6 +15,18 @@ module.exports = {
     'nl-NL': 'Over mij',
     'en-US': 'About me'
   },
+  services: {
+    'nl-NL': 'Diensten',
+    'en-US': 'Services'
+  },  
+  haircut: {
+    'nl-NL': 'Behandeling / Knippen / Föhnen',
+    'en-US': 'Treatment / Haircut / Blowdry'
+  },  
+  coloring: {
+    'nl-NL': 'Verven',
+    'en-US': 'Coloring'
+  },  
   language: {
     'nl-NL': 'Taal',
     'en-US': 'Language'
@@ -30,5 +42,29 @@ module.exports = {
   all_posts: {
     'nl-NL': 'Bekijk alle berichten',
     'en-US': 'View all posts'
+  },
+  blog1_titel: {
+    'nl-NL': 'Essentiele Verzorgingstips',
+    'en-US': 'Essential Hair Tips'
+  },
+  blog2_titel: {
+    'nl-NL': 'Latest Hair Coloring Techniques',
+    'en-US': 'Nieuwste kleurtechnieken'
+  },
+  blog3_titel: {
+    'nl-NL': 'Nieuwste Kniptechnieken',
+    'en-US': 'Latest Cutting Techniques'
+  },
+  appointment: {
+    'nl-NL': 'Maak een afspraak',
+    'en-US': 'Make an appointment'
+  },
+  become_partners: {
+  'nl-NL': 'Wordt partners',
+  'en-US': 'Become partners'
+  },
+  combinations: {
+    'nl-NL': 'Combinaties',
+    'en-US': 'Combinations'
   }
 };

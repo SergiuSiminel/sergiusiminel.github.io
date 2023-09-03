@@ -73,7 +73,7 @@ title: Sergiu Siminel - Home
                                 <img src="/assets/img/service/icon/haircut.png" alt="Service" />
                             </div>
                             <div class="heading">
-                                <h3>Treatment / Haircut / Blowdry</h3>
+                                <h3>{{ 'haircut' | i18n }}</h3>
                             </div>
                         </div>
 
@@ -102,7 +102,7 @@ title: Sergiu Siminel - Home
                                 <img src="/assets/img/service/icon/color.png" alt="Service" />
                             </div>
                             <div class="heading">
-                                <h3>Coloring</h3>
+                                <h3>{{ 'coloring' | i18n }}</h3>
                             </div>
                         </div>
 
@@ -129,11 +129,11 @@ title: Sergiu Siminel - Home
         <div class="row">
             <div class="col-12 text-center">
                     <div class="call-to-action-content">
-                        <p>Experience personalized care for your distinct style with our dedicated hairstylist. Your individuality takes
-                            center stage as our expert crafts a haircut that aligns perfectly with your preferences. Embrace the
-                            attention you deserve and book your appointment to enjoy a haircut that's uniquely and meticulously
-                            tailored to you.</p>
-                    <a href="{{ '/contact' | locale_url }}" class="btn btn-hvr-brand">MAKE AN APPOINTMENT</a>
+                        <p>Ervaar persoonlijke zorg voor jouw unieke stijl met onze toegewijde kapper. Jouw individualiteit staat 
+                            centraal terwijl onze expert een kapsel creëert dat perfect aansluit bij jouw voorkeuren. Omarm de 
+                            aandacht die je verdient en maak een afspraak om te genieten van een kapsel dat speciaal en zorgvuldig 
+                            op maat voor jou is gemaakt.</p>
+                    <a href="{{ '/contact' | locale_url }}" class="btn btn-hvr-brand">MAAK EEN AFSPRAAK</a>
                     </div>
             </div>
         </div>
@@ -151,11 +151,11 @@ title: Sergiu Siminel - Home
                 <div class="col-12 text-center">
                     <div class="section-title section-title--3">
                         <h2>Partners</h2>
-                        <p>Join us on a journey of collaboration and growth. We're excited to extend an invitation
-                            to potential partners who share our vision and values. Together, we can amplify our impact,
-                            innovate, and create lasting success. Discover the possibilities of partnership and let's shape
-                            the future together.</p>
-                        <a href="{{ '/partners' | locale_url }}" class="btn btn-hvr-brand">BECOME PARTNERS</button>
+                        <p>Sluit je aan bij ons op een reis van samenwerking en groei. We zijn enthousiast om een uitnodiging uit 
+                            te breiden naar potentiële partners die onze visie en waarden delen. Samen kunnen we onze impact vergroten, 
+                            innoveren en blijvend succes creëren. Ontdek de mogelijkheden van partnerschap en laten we samen de 
+                            toekomst vormgeven.</p>
+                        <a href="{{ '/partners' | locale_url }}" class="btn btn-hvr-brand">WORDT PARTNERS</button>
                         </a>
                     </div>
                 </div>
@@ -168,8 +168,9 @@ title: Sergiu Siminel - Home
                             <img src="/assets/img/feature/drsorbie.png" alt="Salon">
                         </div>
                         <div class="feature-item__text">
-                            <p class="mb-0">Dr. Sorbie, a celebrated natural hair brand, fuses science and nature in transformative
-                                products. From revitalizing shampoos to enriching conditioners, embrace healthier, radiant hair with us.</p>
+                            <p class="mb-0">Dr. Sorbie, een gevierd merk voor natuurlijk haar, combineert wetenschap en natuur in 
+                                transformerende producten. Van revitaliserende shampoos tot verrijkende conditioners, omarm gezonder, 
+                                stralend haar met ons.</p>
                         </div>
                     </div>
                 </div>
@@ -180,8 +181,9 @@ title: Sergiu Siminel - Home
                             <img src="/assets/img/feature/redken.png" alt="Salon">
                         </div>
                         <div class="feature-item__text">
-                            <p class="mb-0">Pioneering haircare blending science and creativity. Trusted globally for vibrant colors,
-                                transformative treatments, and a fusion of art and science that brings your hair to life.</p>
+                            <p class="mb-0">Baanbrekende haarverzorging die wetenschap en creativiteit combineert. Wereldwijd 
+                                vertrouwd voor levendige kleuren, transformerende behandelingen, en een samensmelting van kunst 
+                                en wetenschap die jouw haar tot leven brengt.</p>
                         </div>
                     </div>
                 </div>
@@ -212,13 +214,14 @@ title: Sergiu Siminel - Home
                         <img src="/assets/img/blog/01.jpg" alt="Blog" />
                     </figure>
                     <div class="blog-post__content">
-                        <h6 class="post-date">27-8-2023</h6>
-                        <h2 class="post-title"><a href="{{ '/blog/blog1' | locale_url }}">Essential Hair Tips</a>
+                        <h6 class="post-date">{{ blog.data.dat }}</h6>
+                        <h2 class="post-title"><a href="{{ '/blog/blog1' | locale_url }}">{{ blog.data.title }}</a>
                         </h2>
                         <div class="post-excerpt">
-                            <p>Discover the secret to lustrous, healthy hair with these essential tips: from regular deep conditioning 
-                                to proper heat protection, scalp care, and choosing the right products. Embrace natural remedies and 
-                                a balanced diet for vibrant locks that reflect your inner beauty.</p><br>
+                            <p>Ontdek het geheim van glanzend, gezond haar met deze essentiële tips: van regelmatige diepe 
+                                conditioning tot de juiste hittebescherming, hoofdhuidverzorging en het kiezen van de juiste 
+                                producten. Omarm natuurlijke remedies en een uitgebalanceerd dieet voor levendige lokken die 
+                                jouw innerlijke schoonheid weerspiegelen.</p><br>
                         </div>
                         <a href="{{ '/blog/blog1' | locale_url }}" class="btn btn-bordered">{{ 'read' | i18n }}</a>
                     </div>
@@ -234,13 +237,14 @@ title: Sergiu Siminel - Home
                     </figure>
 
                     <div class="blog-post__content">
-                        <h6 class="post-date">27-8-2023</h6>
-                        <h2 class="post-title"><a href="{{ '/blog/blog2' | locale_url }}">Latest Hair Coloring Techniques</a>
+                        <h6 class="post-date">{{ blog.data.dat }}</h6>
+                        <h2 class="post-title"><a href="{{ '/blog/blog2' | locale_url }}">{{ blog.data.title }}</a>
                         </h2>
                         <div class="post-excerpt">
-                            <p>Discover the latest in hair coloring techniques, from the natural radiance of Balayage to the 
-                                captivating allure of the Black Out Technique and Highlights. These trends provide a unique way to express 
-                                yourself through your hair, inviting you on a transformative journey of self-expression.</p><br>
+                            <p>Ontdek de nieuwste haarkleurtechnieken, van de natuurlijke uitstraling van Balayage tot de 
+                                betoverende aantrekkingskracht van de Black Out-techniek en Highlights. Deze trends bieden 
+                                een unieke manier om jezelf uit te drukken via je haar en nodigen je uit op een transformerende 
+                                reis van zelfexpressie.</p><br>
                         </div>
                         <a href="{{ '/blog/blog2' | locale_url }}" class="btn btn-bordered">{{ 'read' | i18n }}</a>
                     </div>
@@ -256,13 +260,13 @@ title: Sergiu Siminel - Home
                     </figure>
 
                     <div class="blog-post__content">
-                        <h6 class="post-date">27-8-2023</h6>
-                        <h2 class="post-title"><a href="{{ '/blog/blog3' | locale_url }}">Latest Cutting Techniques</a>
+                        <h6 class="post-date">{{ blog.data.dat }}</h6>
+                        <h2 class="post-title"><a href="{{ '/blog/blog3' | locale_url }}">{{ blog.data.title }}</a>
                         </h2>
                         <div class="post-excerpt">
-                            <p>Explore the realm of cutting-edge cutting techniques in our blog. From precision cuts to textured 
-                                layers, find your perfect look with our skilled stylists. Whether it's a chic blunt bob or an edgy 
-                                undercut, let your hair reflect your unique style at our salon.</p><br>
+                            <p>Verken het rijk van cutting-edge kniptechnieken in onze blog. Van precisieknipwerk tot getextureerde 
+                                lagen, vind jouw perfecte look met onze ervaren stylisten. Of het nu gaat om een chique blunt bob 
+                                of een gedurfde undercut, laat jouw haar jouw unieke stijl weerspiegelen in onze salon.</p><br>
                         </div>
                         <a href="{{ '/blog/blog3' | locale_url }}" class="btn btn-bordered">{{ 'read' | i18n }}</a>
                     </div>
